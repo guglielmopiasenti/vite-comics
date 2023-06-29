@@ -31,7 +31,11 @@ export default {
 
 <template>
     <section id="upper-footer">
-        <div class="container"></div>
+        <div class="container">
+            <ul class="upper-footer-list">
+                <li v-for="link in links"> {{ link.img }} {{ link.title }}</li>
+            </ul>
+        </div>
     </section>
     <section id="main-footer">
         <div class="container"></div>
@@ -41,9 +45,13 @@ export default {
     </section>
 </template>
 
-<style>
+<style scoped>
 #upper-footer {
     background-color: #0782F9;
+}
+
+.upper-footer-list {
+    display: flex;
 }
 
 #main-footer {}
