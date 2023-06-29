@@ -64,7 +64,7 @@ export default {
         <div class="header">
             <img src="src/assets/img/dc-logo.png" alt="DC logo">
             <ul>
-                <li v-for="link in links">{{ link.text }}</li>
+                <li v-for="link in links" :class="{ active: current }">{{ link.text }}</li>
             </ul>
         </div>
     </div>
