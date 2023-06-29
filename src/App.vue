@@ -29,4 +29,8 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+ul {
+  list-style-type: none;
+}
 </style>
