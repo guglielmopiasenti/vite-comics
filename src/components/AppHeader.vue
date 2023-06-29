@@ -80,7 +80,7 @@ export default {
 }
 
 img {
-    height: 50px;
+    height: 60px;
 }
 
 ul {
