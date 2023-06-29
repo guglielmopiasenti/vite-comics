@@ -33,7 +33,10 @@ export default {
     <section id="upper-footer">
         <div class="container">
             <ul class="upper-footer-list">
-                <li v-for="link in links"> {{ link.img }} {{ link.title }}</li>
+                <li v-for="link in links">
+                    <img :src="link.img" :alt="link.title" />
+                    {{ link.title }}
+                </li>
             </ul>
         </div>
     </section>
@@ -105,7 +108,7 @@ export default {
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #upper-footer {
     background-color: #0782F9;
     padding: 30px 0;
@@ -113,8 +116,22 @@ export default {
 
 .upper-footer-list {
     display: flex;
+    justify-content: center;
+    gap: 20px;
     color: white;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: smaller;
+    }
+
+    img {
+        height: 40px;
+    }
 }
+
 
 /*  */
 #main-footer {
@@ -135,20 +152,18 @@ h4 {
     color: white;
 }
 
-.list-container>li {
-    color: grey;
-}
 
 #lower-footer {
     background-color: #303030;
     padding: 30px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-#lower-footer>.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .btn-footer {
     color: white;
@@ -161,9 +176,9 @@ h4 {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-}
 
-.footer-logo>h4 {
-    color: #0782F9;
+    h4 {
+        color: #0782F9;
+    }
 }
 </style>
