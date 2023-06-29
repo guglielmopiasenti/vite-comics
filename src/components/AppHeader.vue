@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            headerSections: [
+            links: [
                 {
                     text: 'Characters',
                     url: '#',
@@ -61,10 +61,35 @@ export default {
 </script>
 <template>
     <div class="container">
-        <img src="src/assets/img/dc-logo.png" alt="DC logo">
-        <ul>
-            <li></li>
-        </ul>
+        <div class="header">
+            <img src="src/assets/img/dc-logo.png" alt="DC logo">
+            <ul>
+                <li v-for="link in links">{{ link.text }}</li>
+            </ul>
+        </div>
     </div>
 </template>
-<style></style>
+
+<!-- Header style -->
+<style scoped>
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+img {
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666768;
+}
+</style>
