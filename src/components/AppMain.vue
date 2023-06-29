@@ -14,5 +14,6 @@
 h2 {
     color: white;
     padding: 30px 0;
+    text-align: center;
 }
 </style>
