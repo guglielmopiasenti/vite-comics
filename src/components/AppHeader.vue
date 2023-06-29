@@ -59,5 +59,12 @@ export default {
     }
 }
 </script>
-<template></template>
+<template>
+    <div class="container">
+        <img src="src/assets/img/dc-logo.png" alt="DC logo">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</template>
 <style></style>
