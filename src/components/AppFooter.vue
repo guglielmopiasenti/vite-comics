@@ -91,7 +91,17 @@ export default {
         </div>
     </section>
     <section id="lower-footer">
-        <div class="container"></div>
+        <div class="container">
+            <div class="btn-footer">SIGN-UP NOW!</div>
+            <div class="footer-logo">
+                <h4> FOLLOW US</h4>
+                <img src="src/assets/img/footer-facebook.png" alt="Facebook">
+                <img src="src/assets/img/footer-twitter.png" alt="Twitter">
+                <img src="src/assets/img/footer-youtube.png" alt="YouTube">
+                <img src="src/assets/img/footer-pinterest.png" alt="Pinterest">
+                <img src="src/assets/img/footer-periscope.png" alt="Periscope">
+            </div>
+        </div>
     </section>
 </template>
 
@@ -131,5 +141,29 @@ h4 {
 
 #lower-footer {
     background-color: #303030;
+    padding: 30px 0;
+}
+
+#lower-footer>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-footer {
+    color: white;
+    border: 2px solid #0782F9;
+    padding: 15px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo>h4 {
+    color: #0782F9;
 }
 </style>
