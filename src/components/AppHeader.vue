@@ -64,7 +64,7 @@ export default {
         <div class="header">
             <img src="src/assets/img/dc-logo.png" alt="DC logo">
             <ul>
-                <li v-for="link in links" :class="{ active: current }">{{ link.text }}</li>
+                <li v-for="link in links" :class="{ active: link.current }">{{ link.text }}</li>
             </ul>
         </div>
     </div>
@@ -91,5 +91,9 @@ ul {
     font-size: 13px;
     font-weight: 600;
     color: #666768;
+}
+
+.active {
+    color: dodgerblue;
 }
 </style>
