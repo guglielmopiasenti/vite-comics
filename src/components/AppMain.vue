@@ -1,4 +1,6 @@
 <script>
+import AppComicCard from './components/AppComicCard.vue'
+
 export default {
     props: { comicBooks: Array }
 }
@@ -6,23 +8,37 @@ export default {
 <template>
     <section id="main">
         <div class="container">
-            <ul>
-                <li v-for="comic in comicBooks" :key="comic.series">
-                    <img src="comic.thumb" alt="comic.series">
-                    {{ comic.series }}
-                </li>
-            </ul>
+            <AppComicCard :comicBooks="comicBooks" />
         </div>
     </section>
 </template>
-<style scoped>
+
+<style lang="scss" scoped>
 #main {
     background-color: #1C1C1C;
 }
 
-h2 {
-    color: white;
-    padding: 60px 0;
-    text-align: center;
+ul {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100% / 6);
+        padding: 20px 20px;
+        color: white;
+        font-size: smaller;
+
+
+        img {
+            display: block;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            background-position: top;
+            margin-bottom: 20px;
+        }
+    }
 }
 </style>
