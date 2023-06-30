@@ -1,8 +1,17 @@
-<script></script>
+<script>
+export default {
+    props: { comicBooks: Array }
+}
+</script>
 <template>
     <section id="main">
         <div class="container">
-            <h2>Content goes here</h2>
+            <ul>
+                <li v-for="comic in comicBooks" :key="comic.series">
+                    <img src="comic.thumb" alt="comic.series">
+                    {{ comic.series }}
+                </li>
+            </ul>
         </div>
     </section>
 </template>
