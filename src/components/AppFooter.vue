@@ -109,8 +109,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use 'src/assets/scss/_var.scss' as *;
+
 #upper-footer {
-    background-color: #0782F9;
+    background-color: $blue;
     padding: 30px 0;
 }
 
@@ -167,7 +169,7 @@ h4 {
 
 .btn-footer {
     color: white;
-    border: 2px solid #0782F9;
+    border: 2px solid $blue;
     padding: 15px;
 }
 
@@ -178,7 +180,7 @@ h4 {
     gap: 20px;
 
     h4 {
-        color: #0782F9;
+        color: $blue;
     }
 }
 </style>

@@ -71,7 +71,9 @@ export default {
 </template>
 
 <!-- Header style -->
-<style scoped>
+<style lang="scss" scoped>
+@use 'src/assets/scss/_var.scss' as *;
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -94,6 +96,6 @@ ul {
 }
 
 .active {
-    color: dodgerblue;
+    color: $blue;
 }
 </style>
