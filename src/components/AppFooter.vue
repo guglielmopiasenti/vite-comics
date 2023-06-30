@@ -137,7 +137,10 @@ export default {
 
 /*  */
 #main-footer {
-    background-image: url(src/assets/img/footer-bg.jpg);
+    background-image: url(src/assets/img/dc-logo-bg.png), url(src/assets/img/footer-bg.jpg);
+    background-position: 75% 50%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
     padding: 30px 0;
 }
 
