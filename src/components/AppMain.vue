@@ -13,7 +13,7 @@
 
 h2 {
     color: white;
-    padding: 30px 0;
+    padding: 60px 0;
     text-align: center;
 }
 </style>
