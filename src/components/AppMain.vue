@@ -1,14 +1,15 @@
 <script>
 import AppComicCard from './AppComicCard.vue';
+import AppJumbotron from './AppJumbotron.vue';
 
 export default {
-    components: { AppComicCard },
+    components: { AppComicCard, AppJumbotron },
     props: { comicBooks: Array }
 }
 </script>
 <template>
     <section id="main">
-
+        <AppJumbotron />
         <div class="container">
             <AppComicCard :comicBooks="comicBooks" />
         </div>
