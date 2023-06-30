@@ -148,10 +148,14 @@ export default {
 
 .m-footer-list>li {
     color: grey;
+    font-size: smaller;
+    padding: 3px 0;
 }
 
 h4 {
     color: white;
+    font-size: larger;
+    padding: 10px 0;
 }
 
 
