@@ -1,8 +1,7 @@
 <script>
 export default {
-    props: {
-        comicBooks: Array
-    }
+
+    props: { comicBooks: Array }
 }
 </script>
 <template>
@@ -13,4 +12,29 @@ export default {
         </li>
     </ul>
 </template>
-<style></style>
+
+<style lang="scss" scoped>
+ul {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100% / 6);
+        padding: 20px 20px;
+        color: white;
+        font-size: smaller;
+
+
+        img {
+            display: block;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            background-position: top;
+            margin-bottom: 20px;
+        }
+    }
+}
+</style>
