@@ -33,7 +33,7 @@ export default {
     <section id="upper-footer">
         <div class="container">
             <ul class="upper-footer-list">
-                <li v-for="link in links">
+                <li v-for="link in links" :key="link.title">
                     <img :src="link.img" :alt="link.title" />
                     {{ link.title }}
                 </li>
