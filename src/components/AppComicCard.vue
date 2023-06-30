@@ -29,10 +29,10 @@ ul {
 
         img {
             display: block;
-            height: 150px;
-            width: 150px;
+            height: 200px;
+            width: 200px;
             object-fit: cover;
-            background-position: top;
+            object-position: top;
             margin-bottom: 20px;
         }
     }
