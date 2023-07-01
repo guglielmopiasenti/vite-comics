@@ -25,6 +25,7 @@ ul {
         padding: 20px 20px;
         color: white;
         font-size: smaller;
+        text-transform: uppercase;
 
 
         img {
