@@ -18,6 +18,7 @@ div {
         color: white;
         background-color: $blue;
         border-color: $blue;
+        cursor: pointer;
     }
 }
 </style>
