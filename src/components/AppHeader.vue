@@ -91,7 +91,7 @@ ul {
     list-style-type: none;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 800;
     color: #666768;
 }
 

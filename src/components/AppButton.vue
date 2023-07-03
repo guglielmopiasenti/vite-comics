@@ -19,6 +19,7 @@ div {
         background-color: $blue;
         border-color: $blue;
         cursor: pointer;
+        font-weight: 700;
     }
 }
 </style>

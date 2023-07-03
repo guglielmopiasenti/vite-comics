@@ -153,13 +153,14 @@ export default {
     color: grey;
     font-size: smaller;
     padding: 3px 0;
+
+    h4 {
+        color: white;
+        font-size: larger;
+        padding: 10px 0;
+    }
 }
 
-h4 {
-    color: white;
-    font-size: larger;
-    padding: 10px 0;
-}
 
 
 #lower-footer {
@@ -178,6 +179,7 @@ h4 {
     color: white;
     border: 2px solid $blue;
     padding: 15px;
+    font-weight: 700;
 }
 
 .footer-logo {
@@ -188,6 +190,7 @@ h4 {
 
     h4 {
         color: $blue;
+        font-weight: 800;
     }
 }
 </style>
